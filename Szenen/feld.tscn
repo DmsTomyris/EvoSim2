@@ -7,59 +7,66 @@ size = Vector2(1770, 35)
 position = Vector2(170, 61)
 scale = Vector2(0.4, 0.4)
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 1765.0
+[node name="Spielfeld" type="Node2D" parent="."]
+
+[node name="UntergrundFarbe" type="ColorRect" parent="Spielfeld"]
+offset_left = 10.0
+offset_right = 1775.0
 offset_bottom = 1319.0
 color = Color(0.158134, 0.296774, 0.369827, 1)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="WandOben" type="StaticBody2D" parent="Spielfeld"]
+scale = Vector2(1, 1)
 
-[node name="ColorRect2" type="ColorRect" parent="StaticBody2D"]
+[node name="ColorRect2" type="ColorRect" parent="Spielfeld/WandOben"]
 offset_top = -26.0
 offset_right = 1757.0
 offset_bottom = 1.0
 color = Color(0.416335, 0.221299, 1.92523e-07, 1)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spielfeld/WandOben"]
 position = Vector2(875, -18.5)
 shape = SubResource("RectangleShape2D_qbbth")
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
-position = Vector2(-3, 1315)
+[node name="WandUnten" type="StaticBody2D" parent="Spielfeld"]
+position = Vector2(-2.99997, 1315)
+scale = Vector2(1, 1)
 
-[node name="ColorRect2" type="ColorRect" parent="StaticBody2D2"]
+[node name="ColorRect2" type="ColorRect" parent="Spielfeld/WandUnten"]
 offset_top = -26.0
 offset_right = 1757.0
 offset_bottom = 1.0
 color = Color(0.416335, 0.221299, 1.92523e-07, 1)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spielfeld/WandUnten"]
 position = Vector2(875, -18.5)
 shape = SubResource("RectangleShape2D_qbbth")
 
-[node name="StaticBody2D3" type="StaticBody2D" parent="."]
-position = Vector2(1738, 3)
+[node name="WandRechts" type="StaticBody2D" parent="Spielfeld"]
+position = Vector2(1738, 3.00002)
 rotation = 1.5708
+scale = Vector2(1, 1)
 
-[node name="ColorRect2" type="ColorRect" parent="StaticBody2D3"]
+[node name="ColorRect2" type="ColorRect" parent="Spielfeld/WandRechts"]
 offset_top = -26.0
 offset_right = 1757.0
 offset_bottom = 1.0
 color = Color(0.416335, 0.221299, 1.92523e-07, 1)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spielfeld/WandRechts"]
 position = Vector2(875, -18.5)
 shape = SubResource("RectangleShape2D_qbbth")
 
-[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+[node name="WandLinks" type="StaticBody2D" parent="Spielfeld"]
 rotation = 1.57392
+scale = Vector2(1, 1)
 
-[node name="ColorRect2" type="ColorRect" parent="StaticBody2D4"]
+[node name="ColorRect2" type="ColorRect" parent="Spielfeld/WandLinks"]
 offset_top = -26.0
 offset_right = 1757.0
 offset_bottom = 1.0
 color = Color(0.416335, 0.221299, 1.92523e-07, 1)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spielfeld/WandLinks"]
 position = Vector2(875, -18.5)
 shape = SubResource("RectangleShape2D_qbbth")
