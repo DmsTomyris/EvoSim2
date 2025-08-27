@@ -16,7 +16,6 @@ offset_bottom = 1319.0
 color = Color(0.158134, 0.296774, 0.369827, 1)
 
 [node name="WandOben" type="StaticBody2D" parent="Spielfeld"]
-scale = Vector2(1, 1)
 
 [node name="ColorRect2" type="ColorRect" parent="Spielfeld/WandOben"]
 offset_top = -26.0
@@ -30,7 +29,6 @@ shape = SubResource("RectangleShape2D_qbbth")
 
 [node name="WandUnten" type="StaticBody2D" parent="Spielfeld"]
 position = Vector2(-2.99997, 1315)
-scale = Vector2(1, 1)
 
 [node name="ColorRect2" type="ColorRect" parent="Spielfeld/WandUnten"]
 offset_top = -26.0
@@ -45,7 +43,6 @@ shape = SubResource("RectangleShape2D_qbbth")
 [node name="WandRechts" type="StaticBody2D" parent="Spielfeld"]
 position = Vector2(1738, 3.00002)
 rotation = 1.5708
-scale = Vector2(1, 1)
 
 [node name="ColorRect2" type="ColorRect" parent="Spielfeld/WandRechts"]
 offset_top = -26.0
@@ -59,7 +56,6 @@ shape = SubResource("RectangleShape2D_qbbth")
 
 [node name="WandLinks" type="StaticBody2D" parent="Spielfeld"]
 rotation = 1.57392
-scale = Vector2(1, 1)
 
 [node name="ColorRect2" type="ColorRect" parent="Spielfeld/WandLinks"]
 offset_top = -26.0
